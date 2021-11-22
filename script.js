@@ -14,62 +14,62 @@ if (footernb) {
 
 // fonc 2
 
-let menuEl = document.getElementById('navbarHeader');
-let hamburgerEl = document.querySelector('span.navbar-toggler-icon');
+let menu = document.getElementById('navbarHeader');
+let hamburger = document.querySelector('span.navbar-toggler-icon');
 
 function menuToogle() {
-    menuEl.classList.toggle("collapse");
+    menu.classList.toggle("collapse");
 }
 
-if (hamburgerEl){    
-    hamburgerEl.addEventListener("click", menuToogle);
+if (hamburger){    
+    hamburger.addEventListener("click", menuToogle);
 }
 
 // fonc 3
 
-let cardEl = document.getElementsByClassName("col-md-4")[0];
-let editEl = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[0];
-let textEl = document.getElementsByClassName("card-text")[0];
+let card = document.getElementsByClassName("col-md-4")[0];
+let edit = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[0];
+let text = document.getElementsByClassName("card-text")[0];
 
-console.log(cardEl);
-console.log(editEl);
-console.log(textEl);
+console.log(card);
+console.log(edit);
+console.log(text);
 
 function changeColor(){
-    textEl.style.color = "red";
+    text.style.color = "red";
 }
 
-if (editEl){
-    editEl.addEventListener("click", changeColor);
+if (edit){
+    edit.addEventListener("click", changeColor);
 }
 
 // fonc 4
 
-let secondCardEl = document.getElementsByClassName("col-md-4")[1];
-let secondEditEl = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1];
-let secondTextEl = document.getElementsByClassName("card-text")[1];
+let secondCard = document.getElementsByClassName("col-md-4")[1];
+let secondEdit = document.getElementsByClassName("btn btn-sm btn-outline-secondary")[1];
+let secondText = document.getElementsByClassName("card-text")[1];
 
-console.log(secondCardEl);
-console.log(secondEditEl);
-console.log(secondTextEl);
+console.log(secondCard);
+console.log(secondEdit);
+console.log(secondText);
 
 function secondChangeColor(){    
-    if (secondTextEl.style.color === 'green'){
-        secondTextEl.style.color = '' ;
+    if (secondText.style.color === 'green'){
+        secondText.style.color = '' ;
     }
-    else secondTextEl.style.color = "green";
+    else secondText.style.color = "green";
 }
 
-if (secondEditEl){
-    secondEditEl.addEventListener("click", secondChangeColor);
+if (secondEdit){
+    secondEdit.addEventListener("click", secondChangeColor);
 }
 
 // fonc 5
 
-let styleLinkEl = document.querySelector("link");
-let headerEl = document.querySelector("header");
-console.log(styleLinkEl);
-console.log(headerEl);
+let styleLink = document.querySelector("link");
+let header = document.querySelector("header");
+console.log(styleLink);
+console.log(header);
 
 let index = 0;
 
@@ -84,6 +84,8 @@ function doubleClic() {
     index++;
 }
 
-if (headerEl){
-    headerEl.addEventListener("click", doubleClic);
+if (header){
+    header.addEventListener("click", doubleClic);
 }
+
+//fonc 6
